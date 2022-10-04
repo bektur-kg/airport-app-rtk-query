@@ -1,0 +1,40 @@
+.root{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+
+  span{
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  textarea{
+    border: 1px solid #514A7E;
+    border-bottom: none;
+    outline: none;
+    padding: 10px 1rem;
+    resize: vertical;
+    min-height: 80px;
+    max-height: 250px;
+  }
+
+  button{
+    padding: 10px 0;
+    background: #514A7E;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+
+    &:disabled{
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    &:hover{
+      background: #3b355e;
+    }
+  }
+
+}

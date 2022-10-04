@@ -1,0 +1,36 @@
+.root {
+  width: 50%;
+  border: 1px solid #514A7E;
+  margin: 0 auto;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  transition: 3s;
+
+  .errorList{
+    width: 88%;
+    margin: 0 auto;
+    font-size: 13px;
+    color: red;
+  }
+
+  .buttonGroup{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    .redirect{
+      border: 1px solid #514A7E;
+      padding: 0.7rem 2rem;
+      font-size: 16px;
+      font-weight: 200;
+      cursor: pointer;
+      width: fit-content;
+      background: transparent;
+      box-shadow: 1px 5px 6px rgba(81, 74, 126, 0.41);
+    }
+  }
+}

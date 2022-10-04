@@ -1,0 +1,31 @@
+.pagination{
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+
+  .next,
+  .prev{
+    font-size: 18px;
+    background: #514A7E;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .pages{
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #514A7E;
+  }
+
+  .activePage{
+    font-size: 18px;
+    background: #514A7E;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+  }
+}

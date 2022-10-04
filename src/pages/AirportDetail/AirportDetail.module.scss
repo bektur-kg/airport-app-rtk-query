@@ -1,0 +1,116 @@
+.root {
+  width: 90%;
+  margin: 1rem auto;
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+
+    h2 {
+      text-align: center;
+      color: #514A7E;
+      font-size: 30px;
+    }
+
+    .details {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      li {
+        border: 2px solid #514A7E;
+        margin-bottom: 1rem;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+        transition: .4s;
+
+        &:hover{
+          background: #514A7E;
+        }
+
+        &:hover p{
+          color: white;
+        }
+
+
+        .key {
+          font-size: 18px;
+          letter-spacing: 1px;
+          font-style: italic;
+          text-transform: capitalize;
+          color: #3d3d3d;
+        }
+
+        .value {
+          font-size: 18px;
+          font-weight: 600;
+          color: #2c2642;
+          font-family: "Century Gothic";
+        }
+      }
+    }
+
+    .commentContainer{
+      width: 100%;
+      margin-top: 3rem;
+
+      .create{
+
+      }
+
+      .list{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .pagination{
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.loading {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back{
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #514A7E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover{
+    background: #514A7E;
+
+    svg{
+      color: white;
+    }
+  }
+
+  svg{
+    color: #514A7E;
+    font-size: 20px;
+  }
+}
